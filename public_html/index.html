@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/base-style.css" />
+    <link rel="stylesheet" href="styles/clickable-boxes.css" />
+    <link rel="stylesheet" href="styles/topics.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <script src="scripts/click_effect.js"></script>
+    <script src="scripts/costumizar.js"></script>
+    <!--<script type="text/javascript" src="https://livejs.com/live.js"></script>[> Provem live reload <]-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Processo da Fábrica de Software</title>
+</head>
+
+<body id="body" class="body">
+    <div class="escolhas col" id="escolher">
+        Selecione
+        <select style="margin-top: 10px" id="select_mao" class="select" aria-label="opções" onchange="mudou()">
+            <option value="1">👆</option>
+            <option value="2">👆🏿</option>
+            <option value="3">👆🏾</option>
+            <option value="4">👆🏽</option>
+            <option value="5">👆🏼</option>
+            <option value="6">👆🏻</option>
+        </select>
+        <hr class="style-six" />
+        Tema
+        <select style="margin-top: 10px" id="select_tema" class="select" aria-label="opções" onchange="mudou_tema()">
+            <option value="1">Normal</option>
+            <option value="2">Escuro</option>
+        </select>
+        <hr class="style-six" />
+        Atividade
+
+        <br />
+        <input id="input_mostrar" onclick="mostrar()" style="margin-top: 10px" type="checkbox"> Mostrar
+    </div>
+    <div onclick="costumizar()" class="costumizar" id="costumize">
+        Costumize
+    </div>
+    <div class="mostrar_atividade" id="mostrar_atividade">
+        Atividade
+    </div>
+
+    <a href="#diagrama_scrum" class="subir bot_voltar" id="voltar">👆️ Diagrama</a>
+
+    <h1>Clique nas atividades para ver detalhes!</h1>
+    <div id="diagrama_scrum">
+        <a href="#anexo1" id="clicar_anexo1" class="clickable round green"></a>
+        <a href="#anexo2" id="clicar_anexo2" class="clickable round green"></a>
+        <a href="#anexo3" id="clicar_anexo3" class="clickable round green"></a>
+
+        <a href="#topico_elevancar_as_necessidades" id="elevancar_as_necessidades" class="clickable round green"></a>
+        <a href="#topico_analizar_requisitos_mudanca" id="analizar_requisitos_mudanca"
+            class="clickable round green"></a>
+        <a href="#topico_executar_as_atividades_sprint" id="executar_as_atividades_sprint"
+            class="clickable round green"></a>
+        <a href="#topico_realizar_revisao_periodica" id="realizar_revisao_periodica" class="clickable round green"></a>
+        <a href="#topico_planejar_sprint" id="planejar_sprint" class="clickable round green"></a>
+        <a href="#topico_sprint_review" id="sprint_review" class="clickable round green"></a>
+        <a href="#topico_atualizacao_da_documenta" id="atualizacao_da_documenta" class="clickable round green"></a>
+        <a href="#topico_retrospectiva_da_sprint" id="retrospectiva_da_sprint" class="clickable round green"></a>
+        <a href="#topico_verificar_atividades_recentes_do_product_backlog"
+            id="verificar_atividades_recentes_do_product_backlog" class="clickable round green"></a>
+        <img id="diagrama" src="images/DiagramaProcessoFabricaSoftware.png" alt="Diagrama do SCRUM" />
+    </div>
+    <div class="topics ">
+
+        <section class="topic" id="topico_elevancar_as_necessidades">
+            <h1>1. Elencar as necessidades</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>
+                O Product Owner irá levantar as necessidades de mudanças e/ou
+                implementação requisitadas pelos clientes,e se for possível, um
+                auxiliar ao Product Owner para que possa conduzir a escrita das
+                necessidades de mudanças.</p>
+            <h2>Responsáveis</h2>
+            <p>Product Owner.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Necessidade de mudanças.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Requisitos de mudanças.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>
+                    A1.1 Reunião com os stakeholders para levantar as necessidades de
+                    mudança.</li>
+                <li>A1.2 Elaborar os requisitos de mudança.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Entrevistas.</li>
+                <li>Formulários ou questionários.</li>
+                <li>Ferramenta de escrita de arquivo.</li>
+                <li>Brainstorming.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>
+                    Levantamento de requisitos:
+                    Janaína. Técnicas para o levantamento de requisitos. 2009. Disponível em:
+                    <a
+                        href="https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151#:~:text=A%20etnografia%20%C3%A9%20uma%20t%C3%A9cnica,o%20sistema%20e%20sua%20hist%C3%B3ria">
+                        https://www.devmedia.com.br/tecnicas-para-levantamento-de-requisitos/9151#:~:text=A%20etnografia%20%C3%A9%20uma%20t%C3%A9cnica,o%20sistema%20e%20sua%20hist%C3%B3ria</a>.
+                    Acesso em: 09 de mar. de 2023.
+                </li>
+                <li>
+                    Tutorial do google form <a
+                        href="https://www.youtube.com/watch?v=mbrAY-bRUDE">https://www.youtube.com/watch?v=mbrAY-bRUDE</a>
+                </li>
+                <li>
+                    RETRAINING. Técnicas de elicitação de requisitos em entrevista. [S. l.], 2020. Disponível em:
+                    <a href="                    https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista
+"> https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-entrevista.
+                    </a> Acesso em: 10 mar. 2023.
+                </li>
+                <li>
+                    RETRAINING. Brainstorming. [S. l.], 2020. Disponível em:
+                    <a
+                        href="https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming">https://retraining.inf.ufsc.br/guia/app/classificacoes/tecnicas-de-elicitacao-de-requisitos/entidades/tecnicas-de-elicitacao-de-requisitos-brainstorming</a>.
+                    Acesso em: 10 mar. 2023.
+                </li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_analizar_requisitos_mudanca">
+            <h1>2. Analizar requisitos de mudança</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>Essa atividade trata-se da análise dos requisitos de mudança para o levantamento do tipo de correção,
+                classificação dos problemas, estimativa de esforço e ferramentas a serem utilizadas, para a criação da
+                ordem de serviço.</p>
+            <h2>Responsáveis</h2>
+            <p>Equipe.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Requisitos de mudança.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Ordem de serviço.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Determinar quais os tipos de correção serão necessárias (corretiva, perfectiva, adaptativa,
+                    preventiva);.</li>
+                <li>
+                    Classificar o nível de severidade dos problemas (baixo, médio, alto), e assim determinar as
+                    prioridades e tempo estimado para a resolução dos problemas.</li>
+                <li>
+                    Fazer a estimativa de esforço / custo monetário.</li>
+                <li>Definir ferramentas que serão utilizadas para a manutenção e acompanhamento da mesma.</li>
+                <li>Elaborar a ordem de serviço de acordo com o <a href="#anexo1">ANEXO I</a>.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Guia Scrum.</li>
+                <li>Ferramentas para manutenção .</li>
+                <li>Equipe Scrum.</li>
+                <li>Ferramenta de edição para a criação da ordem de serviço.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>SCRUM GUIDES. Scrum Guide. Disponível em: <a href="https://www.scrumguides.org/">https://www.scrumguides.org/</a>. Acesso em: 10 mar. 2023.</li>
+                <li>VISURE SOLUTIONS. Os 7 melhores ferramentas de gestão de requisitos. Publicado em 06 dez. 2021. Disponível em: <a href="https://visuresolutions.com/pt/blog/software/top-rm-tools/">https://visuresolutions.com/pt/blog/software/top-rm-tools/</a>. Acesso em: 10 mar. 2023.</li>
+                <li>SOUSA, E. F. Manutenção de software: definições e dificuldades. DevMedia, 2012. Disponível em: <a href="https://www.devmedia.com.br/manutencao-de-software-definicoes-e-dificuldades-artigo-revista-sql-magazine-86/20402">https://www.devmedia.com.br/manutencao-de-software-definicoes-e-dificuldades-artigo-revista-sql-magazine-86/20402</a>. Acesso em: 11 mar. 2023.</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_planejar_sprint">
+            <h1>3. Planejar sprint</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>O planejar a sprint trata-se de uma reunião de no máximo 8 horas que irá planejar como será realizado o
+                trabalho durante a sprint. Cada Sprint dura de 2 a 4 semanas.</p>
+            <h2>Responsáveis</h2>
+            <p>Equipe.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Ordem de serviço.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Sprint Backlog.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Definir a duração da sprint atual.</li>
+                <li>Definir quais atividades serão feitas na sprint atual de acordo com as prioridades estabelecidas na
+                    ordem de serviço.</li>
+                <li>Selecionar as Histórias de Usuário relevantes para o objetivo da Sprint.</li>
+                <li>Estimar os pontos das atividades instanciadas.</li>
+                <li>Definir as responsabilidades de cada membro da equipe durante a Sprint atual.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Trello para acompanhamento da realização das atividades.</li>
+                <li>Planning Poker para estimar as atividades escolhidas para a Sprint.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>Tutorial de uso do Trello: <a href="https://trello.com/tour">https://trello.com/tour</a>.</li>
+                <li>WEST, Dave. Planejamento do Sprint. [S. l.], [2018]. Disponível em: <a href="https://www.atlassian.com/br/agile/scrum/sprint-planning">https://www.atlassian.com/br/agile/scrum/sprint-planning</a>. Acesso em: 10 mar. 2023.</li>
+                <li>CARVALHO, Técia. O que é Planning Poker? Aprenda seu funcionamento junto ao Scrum!. [S. l.], 8 nov. 2019. Disponível em: <a href="https://www.voitto.com.br/blog/artigo/planning-poker">https://www.voitto.com.br/blog/artigo/planning-poker</a>. Acesso em: 10 mar. 2023.</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_executar_as_atividades_sprint">
+            <h1>4. Executar as atividades da sprint</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>Reunião de planejamento para selecionar as tarefas prioritárias do sprint backlog e definir o escopo e
+                objetivo da sprint.</p>
+            <h2>Responsáveis</h2>
+            <p>Equipe.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Sprint Backlog.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Feedback da sprint para A5 / Incremento para A6.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Definir o objetivo e o escopo da sprint na reunião de planejamento.</li>
+                <li>Desenvolver as funcionalidades priorizadas pelo Product Owner.</li>
+                <li>Realizar reuniões diárias para acompanhar o progresso e resolver os obstáculos.</li>
+                <li>Apresentar o resultado da sprint na reunião de revisão.</li>
+                <li>Avaliar o desempenho da equipe e identificar melhorias na reunião de retrospectiva.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Equipe scrum.</li>
+                <li>Ordem de Serviço e Sprint backlog.</li>
+                <li>Ferramenta de gestão de projetos ágeis.</li>
+                <li>Uma sala ou ambiente virtual onde a equipe possa se reunir.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.</li>
+                <li>Project Builder. Scrum: o que é sprint e como executá-lo? Disponível em: <a href="https://www.projectbuilder.com.br/blog/scrum-o-que-e-sprint-e-como-executa-lo/">https://www.projectbuilder.com.br/blog/scrum-o-que-e-sprint-e-como-executa-lo/</a>.</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_realizar_revisao_periodica">
+            <h1>5. Realizar reunião periódica</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>Reunião periódica para fazer a demonstração dos resultados e feedback para fazer correção do mesmo, caso
+                necessário.</p>
+            <h2>Responsáveis</h2>
+            <p>Equipe.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Feedback da sprint.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Feedback da sprint.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Preparar uma agenda com os objetivos, os participantes e a duração da reunião.</li>
+                <li>Analisar o feedback obtido no A4.</li>
+                <li>Discutir os problemas enfrentados e as oportunidades de melhoria. .</li>
+                <li>Revisar o sprint backlog e priorizar itens para o próximo sprint.</li>
+                <li>Encerrar a reunião com um resumo dos resultados.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Um quadro do scrum.</li>
+                <li>Facilitador responsável por controlar o tempo da reunião.</li>
+                <li>Product Owner para esclarecer dúvidas e validar resultados.</li>
+                <li>A equipe que executou as atividades do sprint backlog.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.
+                </li>
+                <li>WEST, Dave. Planejamento do Sprint. [S. l.], [2018]. Disponível em: <a href="https://www.atlassian.com/br/agile/scrum/sprint-planning.">https://www.atlassian.com/br/agile/scrum/sprint-planning.</a> Acesso em: 10 mar. 2023.</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_sprint_review">
+            <h1>6. Revisão da sprint</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>A Revisão da Sprint é o momento em que a equipe e as partes interessadas conversam sobre o andamento
+                final da sprint, validando as entregas da equipe, verificando se o projeto está de acordo com o
+                estabelecido inicialmente e também o mais importante, que é a coleta do feedback do que foi construído
+                pela equipe. A Revisão da Sprint tem uma duração máxima de 4 (quatro) horas.</p>
+            <h2>Responsáveis</h2>
+            <p>O Scrum Team e os stakeholders. Caso não seja possível a presença de todos stakeholders, apenas a
+                presença do Product Owner. para representatividade para os stakeholders.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Incremento.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Feedback do produto pelo Scrum Team e stakeholders.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Revisar e apresentar as entregas feitas pelo Team Scrum;.</li>
+                <li>Feedback do Product Owner e stakeholders;.</li>
+                <li>Validar a entrega de acordo com os requisitos necessários para conclusão da Sprint.</li>
+                <li>Verificar se a entrega está de acordo com as definições da Sprint.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>GitHub.</li>
+                <li>Trello.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_atualizacao_da_documenta">
+            <h1>7. Atualizar a documentação</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>O objetivo dessa atividade é garantir que toda a documentação relacionada ao processo de manutenção seja
+                atualizada para refletir as mudanças feitas durante a sprint. Isso pode incluir atualizações em manuais
+                de usuário, especificações de requisitos, planos de testes, entre outros documentos relevantes.
+            </p>
+            <h2>Responsáveis</h2>
+            <p>Equipe.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Feedback da sprint.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Documentação atualizada.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Revisar a documentação existente para determinar quais documentos precisam ser atualizados com base
+                    nas mudanças feitas durante a sprint.
+                </li>
+                <li>Identificar e definir o escopo da atualização da documentação, que pode incluir manuais de usuário,
+                    especificações de requisitos, planos de testes, diagramas, etc.
+                </li>
+                <li>Realizar as atualizações necessárias nos documentos identificados, garantindo que as mudanças feitas
+                    durante a sprint sejam refletidas com precisão.
+                </li>
+                <li>Garantir que a documentação atualizada seja clara, completa e precisa, facilitando o entendimento da
+                    equipe e outras partes interessadas.
+                </li>
+                <li>Verificar se a documentação atualizada está em conformidade com as normas e padrões de documentação
+                    da organização. </li>
+                <li>Comunicar quaisquer mudanças significativas na documentação para a equipe e outras partes
+                    interessadas, a fim de garantir que todos estejam cientes das mudanças realizadas durante a sprint.
+                </li>
+                <li>Arquivar a documentação atualizada de forma adequada, a fim de facilitar a recuperação de
+                    informações relevantes no futuro.</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Software de edição de documentos como o Microsoft Word.</li>
+                <li>Acesso à documentação existente.</li>
+                <li>Conhecimento e habilidades de documentação.</li>
+                <li>Políticas e normas de documentação.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>PROTOTYPR. Software Documentation: Types and Best Practices. Blog Prototypr, 13 mar. 2018. Disponível em: <a href="https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f">https://blog.prototypr.io/software-documentation-types-and-best-practices-1726ca595c7f</a>. Acesso em: 9 mar. 2023.</li>
+                <li>ISO/IEC. Guide to the Software Engineering Body of Knowledge (SWEBOK), Version 3.0. International
+                    Organization for Standardization, 2014.].</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_retrospectiva_da_sprint">
+            <h1>8. Retrospectiva da sprint</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>A Retrospectiva da Sprint é o momento em que a equipe inspeciona a última sprint realizada, tanto em
+                relação à própria equipe, quanto as interações feitas, os processos e as ferramentas utilizadas, além de
+                verificar o que deu certo ou não, e como os possíveis problemas foram resolvidos, para então, aplicar
+                melhorias na realização da próxima sprint.</p>
+            <h2>Responsáveis</h2>
+            <p>Equipe.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Documentação atualizada.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Relatório das manutenções.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Revisar as metas do Sprint e avaliar se foram alcançadas.</li>
+                <li>Realizar uma análise da causa dos principais problemas e discutir como
+                    evitá-los no futuro.
+                </li>
+                <li>Avaliar a qualidade do trabalho entregue durante o Sprint e discutir formas de melhorá-lo.</li>
+                <li>Avaliar o desempenho da equipe durante o Sprint e identificar oportunidades de melhoria.</li>
+                <li>Registrar e documentar detalhadamente as manutenções concluídas em um relatório de acordo com o
+                    <a href="#anexo2">ANEXO II</a>, a fim de manter um histórico.
+                </li>
+
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>Google Meet ou Discord.</li>
+                <li>Word, LibreOffice ou Google Docs.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.</li>
+            </ul>
+        </section>
+
+        <section class="topic" id="topico_verificar_atividades_recentes_do_product_backlog">
+            <h1>9. Verificar atividades restantes da ordem de serviço</h1>
+            <a href="#diagrama_scrum" class="blue round" id="voltar">Voltar para o diagrama</a>
+            <hr />
+            <h2>Descrição</h2>
+            <p>Aqui ocorre a verificação da Ordem de Serviço para ver se ainda restam itens que devem ser concluídos.
+                Caso existam, é importante dar continuidade ao projeto adicionando o item na blacklist, onde contém as
+                informações do item em questão e a data que deveria ter sido entregue, é importante armazenar os dias
+                perdidos. E caso não existam itens pendentes, o projeto poderá ser dado como finalizado.</p>
+            <h2>Responsáveis</h2>
+            <p>Product Owner.</p>
+            <h2>Entradas e saídas</h2>
+            <h3>Entrada</h3>
+            <ul>
+                <li>Relatório da manutenção.</li>
+            </ul>
+            <h3>Saída</h3>
+            <ul>
+                <li>Avaliação das atividades da Ordem de Serviço.</li>
+            </ul>
+            <h2>Tarefas:</h2>
+            <ul>
+                <li>Analisar o estado atual da Ordem de Serviço.</li>
+                <li>Verificar a quantidade de itens que foram atendidos.</li>
+                <li> Adicionar os itens que não foram entregues conforme o documento do <a href="#anexo3">ANEXO III</a>
+                    .</li>
+            </ul>
+            <h2>Recursos (ferramentas, métodos, técnicas)</h2>
+            <ul>
+                <li>GitHub.</li>
+                <li>Trello.</li>
+            </ul>
+            <h2>Materiais de apoio</h2>
+            <ul class="ul-materiais">
+                <li>SCHWABER, Ken; SUTHERLAND, Jeff. O Guia do Scrum. In: The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game. [S. l.], 1 nov. 2020. Disponível em: <a href="https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf">https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf</a>.</li>
+            </ul>
+        </section>
+        <section class="topic" id="anexo1_section">
+            <h1 hidden>Anexo I</h1>
+            <img id="anexo1" src="images/anexo/anexo1.jpg" alt="Anexo 1" />
+            <a class="button" href="Download/Anexo_1.docx" download="Anexo_1.docx">Baixar Documento</a>
+        </section>
+        <section class="topic" id="anexo2_section">
+            <h1 hidden>Anexo II</h1>
+            <img id="anexo2" src="images/anexo/anexo2.jpg" alt="Anexo 2" />
+            <a class="button" href="Download/Anexo_2.docx" download="Anexo_2.docx">Baixar Documento</a>
+        </section>
+        <section class="topic" id="anexo3_section">
+            <h1 hidden>Anexo III</h1>
+            <img id="anexo3" src="images/anexo/anexo3.jpg" alt="Anexo 3" />
+            <a class="button" href="Download/Anexo_3.docx" download="Anexo_3.docx">Baixar Documento</a>
+        </section>
+    </div>
+</body>
+
+</html>

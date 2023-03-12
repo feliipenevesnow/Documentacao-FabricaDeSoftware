@@ -1,0 +1,113 @@
+#diagrama_scrum {
+    position: relative;
+    overflow: visible;
+    max-width: 1560px;
+    max-height: 1200px;
+}
+
+.clickable {
+    position: absolute;
+    display: block;
+	/*background-color: red;*/
+	/*opacity:  0.2;*/
+}
+
+.round {
+    border-radius: 5px;
+}
+
+.green:hover {
+    background-color: rgba(0, 100, 0, 0.2);
+}
+
+.red:hover {
+    background-color: rgba(140, 0, 20, 0.2);
+}
+
+.blue:hover {
+    background-color: rgba(0, 0, 200, 0.1);
+}
+
+.clickable:hover {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#elevancar_as_necessidades {
+    width: 14.5%;
+    height: 6%;
+    top: 18%;
+    left: 11.5%;
+} 
+
+#analizar_requisitos_mudanca {
+    width: 18%;
+    height: 7.5%;
+    top: 33%;
+    left: 10%;
+}
+
+#planejar_sprint {
+    width: 9.5%;
+    height: 4.5%;
+    top: 34.5%;
+    left: 51.5%;
+}
+
+#executar_as_atividades_sprint {
+    width: 11%;
+    height: 6.3%;
+    top: 33.5%;
+    left: 67%;
+}
+#realizar_revisao_periodica {
+    width: 9.2%;
+    height: 7.8%;
+    top: 33%;
+    left: 86.5%;
+}
+#sprint_review {
+    width: 9.7%;
+    height: 3.5%;
+    top: 50%;
+    left: 67.8%;
+}
+#atualizacao_da_documenta {
+   width: 15.3%;
+    height: 4%;
+    top: 63%;
+    left: 48.5%;
+}
+#retrospectiva_da_sprint {
+    width: 12%;
+    height: 4.5%;
+    top: 75.5%;
+    left: 50%;
+}
+#verificar_atividades_recentes_do_product_backlog {
+    width: 9.6%;
+    height: 11.2%;
+    top: 72%;
+    left: 29.1%;
+}
+
+#clicar_anexo1 {
+    width: 12%;
+    height: 3.6%;
+    top: 26.5%;
+    left: 32.5%;
+}
+
+#clicar_anexo2 {
+    width: 8.5%;
+    height: 6%;
+    top: 64.4%;
+    left: 38.4%;
+}
+
+#clicar_anexo3 {
+    width: 8.5%;
+    height: 2.5%;
+    top: 56%;
+    left: 23%;
+}
